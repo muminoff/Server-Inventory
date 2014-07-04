@@ -33,7 +33,7 @@ TEMPLATE_DEBUG = DEBUG
 ########## MANAGER CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#admins
 ADMINS = (
-    ('Your Name', 'your_email@example.com'),
+    ('Sardor', 'smuminov@gmaill.com'),
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#managers
@@ -194,6 +194,7 @@ DJANGO_APPS = (
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
+    'components',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -244,7 +245,7 @@ WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 # See: http://south.readthedocs.org/en/latest/installation.html#configuring-your-django-installation
 INSTALLED_APPS += (
     # Database migration helpers:
-    'south',
+    # 'south',
 )
 # Don't need to use South when setting up a test database.
 SOUTH_TESTS_MIGRATE = False
